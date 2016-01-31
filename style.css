@@ -1,0 +1,287 @@
+* {
+  background: none;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  color: inherit;
+  text-decoration: inherit;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.text {
+  line-height: 150%; }
+  .text p + p {
+    margin-top: 0.5em;
+    text-indent: 2em; }
+
+#header {
+  background-color: #fff;
+  border-bottom: 1px solid #cccccc;
+  position: relative;
+  height: 64px;
+  line-height: 0; }
+  #header .container {
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative; }
+    #header .container #logo {
+      background-color: #07f;
+      display: inline-block;
+      width: 200px;
+      height: 64px; }
+      #header .container #logo img {
+        width: 100%;
+        height: 100%; }
+    #header .container .categories {
+      display: inline-block;
+      height: 64px;
+      line-height: 64px;
+      vertical-align: top;
+      margin-left: 32px; }
+      #header .container .categories a {
+        color: #b3b3b3;
+        font-family: Montserrat;
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 64px;
+        display: inline-block;
+        height: 64px;
+        padding: 0 16px;
+        vertical-align: top; }
+        #header .container .categories a.active {
+          color: #333;
+          box-shadow: inset -1px 0 #07f; }
+      #header .container .categories a.about {
+        position: absolute;
+        right: 0;
+        top: 0; }
+
+#term-sidebar {
+  float: right;
+  border: 1px solid #cccccc;
+  border-width: 0 0 1px 1px;
+  border-radius: 0 0 0 4px;
+  margin-top: -32px;
+  margin-right: -32px;
+  margin-left: 32px;
+  margin-bottom: 32px;
+  position: relative;
+  z-index: 10;
+  width: 360px; }
+  @media (min-width: 480px) and (max-width: 1151px) {
+    #term-sidebar {
+      border-radius: 0;
+      border: none;
+      float: none;
+      width: 100vw;
+      margin: 0;
+      margin-top: -32px;
+      margin-right: -32px;
+      margin-left: -32px;
+      border-bottom: 1px solid #cccccc;
+      margin-bottom: 32px; } }
+  #term-sidebar .section {
+    padding: 8px 0; }
+    #term-sidebar .section header, #term-sidebar .section ul {
+      padding: 8px 24px; }
+    #term-sidebar .section header h1 {
+      font-size: 200%;
+      font-family: Montserrat;
+      text-transform: uppercase;
+      color: #707070;
+      font-size: 100%; }
+    #term-sidebar .section ul {
+      list-style-type: none; }
+    #term-sidebar .section.infobox dl .twr.altitude-vac {
+      display: none; }
+    #term-sidebar .section.infobox dl dt {
+      padding: 8px 24px;
+      width: 160px;
+      float: left;
+      clear: left;
+      font-style: italic;
+      text-align: right;
+      opacity: 0.8; }
+    #term-sidebar .section.infobox dl dd {
+      padding: 8px 24px;
+      display: block;
+      width: 360px;
+      text-align: left;
+      font-family: monoOne, monospace;
+      font-weight: bold; }
+    #term-sidebar .section.infobox dl hr {
+      clear: both;
+      border-top: 1px dotted #cccccc;
+      margin: 0 24px;
+      margin-top: -1px; }
+    #term-sidebar .section.vacuum-only .altitude-sl {
+      display: none; }
+    #term-sidebar .section.vacuum-only .twr.altitude-vac {
+      display: block !important; }
+  #term-sidebar .section + .section {
+    border-top: 1px solid #cccccc; }
+
+body.markdown main header {
+  padding: 8px 32px; }
+  body.markdown main header h1.name {
+    font-size: 200%;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    color: #707070;
+    display: inline-block; }
+  body.markdown main header h2.authors {
+    padding-top: 8px;
+    font-family: serif;
+    font-weight: 100;
+    font-style: italic; }
+    body.markdown main header h2.authors .author {
+      color: #0a69d6;
+      font-weight: bold; }
+
+body.markdown main .contents .text {
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 32px 32px; }
+  body.markdown main .contents .text:after {
+    display: block;
+    content: '';
+    clear: both; }
+  @media (min-width: 480px) and (max-width: 1151px) {
+    body.markdown main .contents .text {
+      border-left-width: 0;
+      border-right-width: 0;
+      border-radius: 0; } }
+  body.markdown main .contents .text #synonyms {
+    font-style: italic;
+    padding-bottom: 16px;
+    font-family: serif;
+    opacity: 0.7;
+    font-size: 90%;
+    text-indent: 16px; }
+
+#term-sidebar {
+  float: right;
+  border: 1px solid #cccccc;
+  border-width: 0 0 1px 1px;
+  border-radius: 0 0 0 4px;
+  margin-top: -32px;
+  margin-right: -32px;
+  margin-left: 32px;
+  margin-bottom: 32px;
+  position: relative;
+  z-index: 10;
+  width: 360px; }
+  @media (min-width: 480px) and (max-width: 1151px) {
+    #term-sidebar {
+      border-radius: 0;
+      border: none;
+      float: none;
+      width: 100vw;
+      margin: 0;
+      margin-top: -32px;
+      margin-right: -32px;
+      margin-left: -32px;
+      border-bottom: 1px solid #cccccc;
+      margin-bottom: 32px; } }
+  #term-sidebar .section {
+    padding: 8px 0; }
+    #term-sidebar .section header, #term-sidebar .section ul {
+      padding: 8px 24px; }
+    #term-sidebar .section header h1 {
+      font-size: 200%;
+      font-family: Montserrat;
+      text-transform: uppercase;
+      color: #707070;
+      font-size: 100%; }
+    #term-sidebar .section ul {
+      list-style-type: none; }
+    #term-sidebar .section.infobox dl .twr.altitude-vac {
+      display: none; }
+    #term-sidebar .section.infobox dl dt {
+      padding: 8px 24px;
+      width: 160px;
+      float: left;
+      clear: left;
+      font-style: italic;
+      text-align: right;
+      opacity: 0.8; }
+    #term-sidebar .section.infobox dl dd {
+      padding: 8px 24px;
+      display: block;
+      width: 360px;
+      text-align: left;
+      font-family: monoOne, monospace;
+      font-weight: bold; }
+    #term-sidebar .section.infobox dl hr {
+      clear: both;
+      border-top: 1px dotted #cccccc;
+      margin: 0 24px;
+      margin-top: -1px; }
+    #term-sidebar .section.vacuum-only .altitude-sl {
+      display: none; }
+    #term-sidebar .section.vacuum-only .twr.altitude-vac {
+      display: block !important; }
+  #term-sidebar .section + .section {
+    border-top: 1px solid #cccccc; }
+
+body.list main header {
+  padding: 8px 32px; }
+  body.list main header h1.title {
+    font-size: 200%;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    color: #707070;
+    display: inline-block; }
+
+body.list main .contents .list {
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  list-style-type: none; }
+  body.list main .contents .list li a {
+    padding: 16px 32px;
+    display: block;
+    font-size: 200%;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    color: #707070;
+    font-size: 100%; }
+  body.list main .contents .list li + li {
+    border-top: 1px solid #cccccc; }
+
+main {
+  flex: 1; }
+  main .contents {
+    max-width: 1088px;
+    width: 100%;
+    margin: 32px auto; }
+    main .contents .text a {
+      box-shadow: inset 0 -3px 0 #a6cfff; }
+
+#footer {
+  background-color: #fff;
+  border-top: 1px solid #cccccc; }
+  #footer .contents {
+    max-width: 1088px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px 32px; }
+
+html, body {
+  width: 100%;
+  min-height: 100vh; }
+
+html {
+  background-color: #f9f9f9; }
+
+body {
+  color: #333;
+  display: flex;
+  flex-direction: column; }
