@@ -74,7 +74,7 @@
   position: relative;
   z-index: 10;
   width: 360px; }
-  @media (min-width: 480px) and (max-width: 1151px) {
+  @media (max-width: 1151px) {
     #term-sidebar {
       border-radius: 0;
       border: none;
@@ -82,14 +82,22 @@
       width: 100vw;
       margin: 0;
       margin-top: -32px;
-      margin-right: -32px;
-      margin-left: -32px;
+      margin-right: -16px;
+      margin-left: -16px;
       border-bottom: 1px solid #cccccc;
       margin-bottom: 32px; } }
   #term-sidebar .section {
     padding: 8px 0; }
     #term-sidebar .section header, #term-sidebar .section ul {
       padding: 8px 24px; }
+    @media (max-width: 1151px) {
+      #term-sidebar .section {
+        padding: 0; } }
+    @media (max-width: 1151px) {
+      #term-sidebar .section header {
+        padding-left: 16px;
+        padding-right: 16px;
+        border-bottom: 1px solid #cccccc; } }
     #term-sidebar .section header h1 {
       font-size: 200%;
       font-family: Montserrat;
@@ -98,6 +106,24 @@
       font-size: 100%; }
     #term-sidebar .section ul {
       list-style-type: none; }
+      @media (max-width: 1151px) {
+        #term-sidebar .section ul {
+          padding: 0;
+          width: 100%; } }
+      #term-sidebar .section ul li {
+        display: block; }
+        #term-sidebar .section ul li > a {
+          display: inline-block; }
+          @media (max-width: 1151px) {
+            #term-sidebar .section ul li > a {
+              padding: 8px 16px;
+              display: block;
+              width: 100%;
+              box-shadow: none;
+              font-weight: bold; } }
+      @media (max-width: 1151px) {
+        #term-sidebar .section ul li + li {
+          border-top: 1px solid rgba(204, 204, 204, 0.5); } }
     #term-sidebar .section.infobox dl .twr.altitude-vac {
       display: none; }
     #term-sidebar .section.infobox dl dt {
@@ -120,6 +146,10 @@
       border-top: 1px dotted #cccccc;
       margin: 0 24px;
       margin-top: -1px; }
+    @media (max-width: 1151px) {
+      #term-sidebar .section.infobox dl dt, #term-sidebar .section.infobox dl dd {
+        padding-left: 16px;
+        padding-right: 16px; } }
     #term-sidebar .section.vacuum-only .altitude-sl {
       display: none; }
     #term-sidebar .section.vacuum-only .twr.altitude-vac {
@@ -153,18 +183,19 @@ body.markdown main .contents .text {
     display: block;
     content: '';
     clear: both; }
-  @media (min-width: 480px) and (max-width: 1151px) {
+  @media (max-width: 1151px) {
     body.markdown main .contents .text {
       border-left-width: 0;
       border-right-width: 0;
-      border-radius: 0; } }
+      border-radius: 0;
+      padding-left: 16px;
+      padding-right: 16px; } }
   body.markdown main .contents .text #synonyms {
     font-style: italic;
     padding-bottom: 16px;
     font-family: serif;
     opacity: 0.7;
-    font-size: 90%;
-    text-indent: 16px; }
+    font-size: 90%; }
 
 #term-sidebar {
   float: right;
@@ -178,7 +209,7 @@ body.markdown main .contents .text {
   position: relative;
   z-index: 10;
   width: 360px; }
-  @media (min-width: 480px) and (max-width: 1151px) {
+  @media (max-width: 1151px) {
     #term-sidebar {
       border-radius: 0;
       border: none;
@@ -186,14 +217,22 @@ body.markdown main .contents .text {
       width: 100vw;
       margin: 0;
       margin-top: -32px;
-      margin-right: -32px;
-      margin-left: -32px;
+      margin-right: -16px;
+      margin-left: -16px;
       border-bottom: 1px solid #cccccc;
       margin-bottom: 32px; } }
   #term-sidebar .section {
     padding: 8px 0; }
     #term-sidebar .section header, #term-sidebar .section ul {
       padding: 8px 24px; }
+    @media (max-width: 1151px) {
+      #term-sidebar .section {
+        padding: 0; } }
+    @media (max-width: 1151px) {
+      #term-sidebar .section header {
+        padding-left: 16px;
+        padding-right: 16px;
+        border-bottom: 1px solid #cccccc; } }
     #term-sidebar .section header h1 {
       font-size: 200%;
       font-family: Montserrat;
@@ -202,6 +241,24 @@ body.markdown main .contents .text {
       font-size: 100%; }
     #term-sidebar .section ul {
       list-style-type: none; }
+      @media (max-width: 1151px) {
+        #term-sidebar .section ul {
+          padding: 0;
+          width: 100%; } }
+      #term-sidebar .section ul li {
+        display: block; }
+        #term-sidebar .section ul li > a {
+          display: inline-block; }
+          @media (max-width: 1151px) {
+            #term-sidebar .section ul li > a {
+              padding: 8px 16px;
+              display: block;
+              width: 100%;
+              box-shadow: none;
+              font-weight: bold; } }
+      @media (max-width: 1151px) {
+        #term-sidebar .section ul li + li {
+          border-top: 1px solid rgba(204, 204, 204, 0.5); } }
     #term-sidebar .section.infobox dl .twr.altitude-vac {
       display: none; }
     #term-sidebar .section.infobox dl dt {
@@ -224,6 +281,10 @@ body.markdown main .contents .text {
       border-top: 1px dotted #cccccc;
       margin: 0 24px;
       margin-top: -1px; }
+    @media (max-width: 1151px) {
+      #term-sidebar .section.infobox dl dt, #term-sidebar .section.infobox dl dd {
+        padding-left: 16px;
+        padding-right: 16px; } }
     #term-sidebar .section.vacuum-only .altitude-sl {
       display: none; }
     #term-sidebar .section.vacuum-only .twr.altitude-vac {
@@ -253,6 +314,14 @@ body.list main .contents .list {
     text-transform: uppercase;
     color: #707070;
     font-size: 100%; }
+  body.list main .contents .list li.empty-list {
+    padding: 16px 32px;
+    display: block;
+    font-size: 200%;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    color: #707070;
+    font-size: 100%; }
   body.list main .contents .list li + li {
     border-top: 1px solid #cccccc; }
 
@@ -273,6 +342,13 @@ main {
     width: 100%;
     margin: 0 auto;
     padding: 16px 32px; }
+    #footer .contents a {
+      font-size: 200%;
+      font-family: Montserrat;
+      text-transform: uppercase;
+      color: #707070;
+      font-size: 85%;
+      opacity: 0.7; }
 
 html, body {
   width: 100%;
