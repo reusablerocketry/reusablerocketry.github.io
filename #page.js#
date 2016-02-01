@@ -1,0 +1,6 @@
+
+$(document).ready(function() {
+  $('#header-toggle').click(function() {
+    $('bod').toggleClass('header-open');
+  });
+});
