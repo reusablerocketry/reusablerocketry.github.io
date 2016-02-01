@@ -94,7 +94,12 @@
           #header .container .categories a.about {
             position: static; } }
     #header .container #header-toggle {
-      display: none; }
+      display: none;
+      height: 64px;
+      width: 64px; }
+      #header .container #header-toggle img {
+        height: 64px;
+        width: 64px; }
       @media (max-width: 479px) {
         #header .container #header-toggle {
           display: block;
