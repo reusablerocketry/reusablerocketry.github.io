@@ -216,43 +216,6 @@
   #term-sidebar .section + .section {
     border-top: 1px solid #cccccc; }
 
-body.markdown main header.title {
-  padding: 8px 32px; }
-  @media (max-width: 479px) {
-    body.markdown main header.title {
-      background-color: #07f;
-      padding: 0; } }
-  body.markdown main header.title h1.name {
-    font-size: 200%;
-    font-family: Montserrat;
-    text-transform: uppercase;
-    color: #707070;
-    display: inline-block; }
-    @media (max-width: 479px) {
-      body.markdown main header.title h1.name {
-        color: white;
-        height: 64px;
-        line-height: 64px; } }
-  body.markdown main header.title h2.authors {
-    padding-top: 8px;
-    font-family: serif;
-    font-weight: 100;
-    font-style: italic; }
-    body.markdown main header.title h2.authors .author {
-      color: #0a69d6;
-      font-weight: bold; }
-    @media (max-width: 479px) {
-      body.markdown main header.title h2.authors {
-        color: white; }
-        body.markdown main header.title h2.authors .author {
-          color: white; } }
-  @media (max-width: 1151px) {
-    body.markdown main header.title {
-      padding: 8px 16px; }
-      body.markdown main header.title h1.name {
-        font-size: 120%;
-        font-weight: bold; } }
-
 body.markdown main .contents .text {
   background-color: #fff;
   border: 1px solid #cccccc;
@@ -374,15 +337,6 @@ body.markdown main .contents .text {
   #term-sidebar .section + .section {
     border-top: 1px solid #cccccc; }
 
-body.list main header {
-  padding: 8px 32px; }
-  body.list main header h1.title {
-    font-size: 200%;
-    font-family: Montserrat;
-    text-transform: uppercase;
-    color: #707070;
-    display: inline-block; }
-
 body.list main .contents .list {
   background-color: #fff;
   border: 1px solid #cccccc;
@@ -390,11 +344,12 @@ body.list main .contents .list {
   list-style-type: none; }
   @media (max-width: 1151px) {
     body.list main .contents .list {
+      border-top-width: 0;
       border-left-width: 0;
       border-right-width: 0;
       border-radius: 0;
-      padding-left: 16px;
-      padding-right: 16px; } }
+      padding-left: 0;
+      padding-right: 0; } }
   body.list main .contents .list li a, body.list main .contents .list li.empty-list {
     padding: 16px 32px;
     display: block;
@@ -419,6 +374,42 @@ main {
     @media (max-width: 479px) {
       main .contents {
         margin: 0; } }
+    main .contents header.title {
+      padding: 8px 32px; }
+      @media (max-width: 479px) {
+        main .contents header.title {
+          background-color: #07f;
+          padding: 0; } }
+      main .contents header.title h1 {
+        font-size: 200%;
+        font-family: Montserrat;
+        text-transform: uppercase;
+        color: #707070;
+        display: inline-block; }
+        @media (max-width: 479px) {
+          main .contents header.title h1 {
+            color: white;
+            height: 64px;
+            line-height: 64px; } }
+      main .contents header.title h2.authors {
+        padding-top: 8px;
+        font-family: serif;
+        font-weight: 100;
+        font-style: italic; }
+        main .contents header.title h2.authors .author {
+          color: #0a69d6;
+          font-weight: bold; }
+        @media (max-width: 479px) {
+          main .contents header.title h2.authors {
+            color: white; }
+            main .contents header.title h2.authors .author {
+              color: white; } }
+      @media (max-width: 1151px) {
+        main .contents header.title {
+          padding: 8px 16px; }
+          main .contents header.title h1.name {
+            font-size: 120%;
+            font-weight: bold; } }
     main .contents .text a {
       box-shadow: inset 0 -3px 0 #a6cfff; }
 
